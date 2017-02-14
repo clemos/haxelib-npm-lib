@@ -1,0 +1,26 @@
+{
+  "name": "npm-haxelib-link",
+  "version": "0.0.1",
+  "description": "a tool to link npm packages with haxelib packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "link-all": "node scripts/link-all"
+  },
+  "bin": {
+    "npm-haxelib-link-all": "bin/link-all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clemos/npm-haxelib-link.git"
+  },
+  "author": "Clément Charmet <cl3mos@gmail.com> (http://github.com/clemos)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clemos/npm-haxelib-link/issues"
+  },
+  "homepage": "https://github.com/clemos/npm-haxelib-link#readme",
+  "devDependencies": {
+    "haxe": "github:clemos/npm-haxe"
+  }
+}
