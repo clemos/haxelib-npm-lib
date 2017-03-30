@@ -21,7 +21,10 @@ exec('npm root', function(err,stdout,stderr){
                 if( err == null && stats != null && stats.isFile() ) {
                     var haxelib_name = JSON.parse(fs.readFileSync(haxelib_json)).name;
                     console.log('linking ' + haxelib_name);
-                    haxelib('dev', haxelib_name, haxelib_path);
+                    haxelib.exec(['dev', haxelib_name, haxelib_path],function(err, stdout, stderr){
+                        console.log(stdout);
+                        console.log(stderr);
+                    });
                 }
             });
         });
